@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="bg-warning">
+    <h1 class="text-center mt-5">Calculator</h1>
+    <p class="fs-3 text-center">Enter the values ​​and then select the operation</p>
+    <div class="container shadow bg-white p-5 bg-body rounded">
+        <div class="d-flex justify-content-center mt-3">
+            <input id="n1" type="number" placeholder="First value">
+            <input id="add" onclick="sumar()" type="button" value="+">
+            <input id="subtract" onclick="restar()" type="button" value="-">
+            <input id="multiply" onclick="multiplicar()" type="button" value="x">
+            <input id="split" onclick="dividir()" type="button" value="/">
+            <input id="n2" type="number" placeholder="Second value">
+        </div>
+        <p id="result" class="fs-2 text-center"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
